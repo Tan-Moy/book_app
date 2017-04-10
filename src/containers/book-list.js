@@ -40,6 +40,6 @@ function mapDispatchToProps(dispatch){
     return bindActionCreators({selectBook:selectBook},dispatch);
 }
 
-//Promote bookList to conatiner - It needs to know about this
+//Promote bookList to container - It needs to know about this
 //new dispatch method, selectBook. Make it availabe as a prop
 export default connect(mapStateToProps, mapDispatchToProps)(BookList);
